@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".perfil.fragments.PerfilFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/hello_blank_fragment"/>
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/perfilSivDeveloper"
+
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_margin="26sp"
+
+        android:scaleType="centerCrop"
+        app:strokeWidth="5sp"
+        app:strokeColor="?attr/colorPrimary"
+        app:srcCompat="@drawable/nice"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/perfilTvNombreLabel"
+        />
+    <TextView
+          android:id="@+id/perfilTvNombreLabel"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textAligment="center"
+
+          android:text="Nombre:"
+          android:textColor="?attr/colorSecondary"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/perfilSivDeveloper"
+          app:layout_constraintBottom_toTopOf="@id/perfilTvNombreDev"
+
+    />
+
+    <TextView
+            android:id="@+id/perfilTvNombreDev"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="?attr/colorTertiary"
+
+            android:text="Carlos Alejandro Villa Mendoza:"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/perfilTvNombreLabel"
+            app:layout_constraintBottom_toTopOf="@id/perfilTvNCLabel"
+
+    />
+    <TextView
+            android:id="@+id/perfilTvNCLabel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Número de control:"
+            android:textColor="?attr/colorSecondary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/perfilTvNombreDev"
+            app:layout_constraintBottom_toTopOf="@id/perfilTvNCDev"
+
+    />
+
+    <TextView
+            android:id="@+id/perfilTvNCDev"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:text="L20291029"
+            android:textColor="?attr/colorTertiary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/perfilTvNCLabel"
+            app:layout_constraintBottom_toTopOf="parent"
+
+    />
+
+</FrameLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Country App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="countryItemTvCountryNameExample">México</string>
+    <string name="countryItemTvCountryCapitalExample">Ciudad de México\n</string>
+    <string name="countryItemTvCountryPopulationLabel">Poblacion:</string>
+    <string name="countryItemTvCountryPopulationExample">120</string>
+    <string name="mainNavMiConntinente">Continentes</string>
+    <string name="mainNavMiContinente">Continentes</string>
+    <string name="mainNavMiBuscar">Buscar País</string>
+    <string name="mainNavMiPerfil">Dev info\n</string>
+</resources>

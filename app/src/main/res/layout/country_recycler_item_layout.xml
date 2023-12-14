@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@drawable/bg_rectangle_shape"
+                                                   android:layout_margin="8sp"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+            android="@+id/countryitemTvCountryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/textTitle.bold.center"
+            android:text="@string/countryItemTvCountryNameExample"
+            android:layout_marginHorizontal="16sp"
+            android:layout_marginTop="8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/countryItemTvCountryDataBox"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/countryItemSivCountryimg"
+                    android:layout_width="180dp"
+                    android:layout_height="120dp"
+                    app:srcCompat="@drawable/ic_world_25"
+                    android:scaleType="centerDrop"
+                    app:strokeWidth="5sp"
+                    app:strokeColor="?attr/colorPrimary"
+                    app:shapeAppearanceOverlay="@style/roundedShapeImage"
+                    android:layout_margin="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/countryItemCountryInfoBox"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/countryItemCountryInfoBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd"14sp"
+            app:layout_constraintStart_toEndOf="@id/countryItemSivCountryimg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+>
+
+
+        <TextView
+                android:id="@+id/countryItemTvCountryCapitalLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textSubtitle"
+                android:text="@string/countryItemTvCountryCapitalLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTop="parent"
+                app:layout_constraintBottom_toBottomOf="@id/countryItemTvCountryCapital"
+                />
+
+        <TextView
+                android:id="@+id/countryItemTvCountryCapital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textSubSubtitle"
+                android:text="@string/countryItemTvCountryCapitalExample"
+                android:layout_marginBottom="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/countryItemTvCountryCapitalLabel"
+                app:layout_constraintBottom_toTopOf="@id/countryItemTvCountryPopulationLabel"
+                />
+
+        <TextView
+                android:id="@+id/countryItemTvCountryPopulationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textSubtitle"
+                android:text="@string/countryItemTvCountryPopulationLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="tvCountryCapital"
+                app:layout_constraintBottom_toTopOf="@id/countryItemTvCountryCapital"
+        />
+
+        <TextView
+                android:id="@+id/countryItemTvCountryPopulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/textSubSubtitle"
+                android:text="@string/countryItemTvCountryPopulationExample"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/countryItemTvCountryPopulationLabel"
+                app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/countryItemTvCountryDataBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/countryitemTvCountryName"
+            app:layout_constraintBottom_toBottomOf="parent"
+            ></androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
